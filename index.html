@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF=8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FINAL_PROJECT</title>
+    <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="containers">
+        
+        <video autoplay loop muted plays-inline class="back-video">
+                <source src="Images/earth.mp4" type="video/mp4">
+                                    
+            </video>
+            
+        <div class="box">
+            <nav>
+       <a href="#" class="logo">John</a>
+                <ul>
+                    <li>
+        <li><a href="#home">Home</a></li>  
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contains">
+                <div class="section-1">
+                    <h1>Hi I'am Regaspi</h1>
+                    <h3>BS In Information Technology</h3>
+                    <p>2nd Year College Student In ICCT Cainta Main Campus</p>
+              <a href="#" class="btn">Contact Me</a>
+                </div>
+                <div class="section-2">
+             <img src="Images/User3.jpg" alt="">
+                </div>
+                <div class="section-3">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <!-- -----About Me----- -->
+
+
+
+<section class="about" id="about">
+    <h1 class="heading"><span>About</span>&nbsp;me</h1>
+       
+       
+           <div class="row">
+            <div class="about-col-1">
+                <img src="Images/User2.jpeg">
+            </div>
+            <div class="about-col-2">                
+               <p>I am John Carlo Regaspi  you can call me Jc for short. I was born on 23rd of May, year 2003. I am the third among the four siblings. Son of Mr. Edgar and Mrs. Jenelyn Regaspi. My father is an electrician while my mother is a housewife. My favorite color is grey. I love playing instruments like guitar, drums and etc. I am a church musician. I also love playing mobile games and also I really love Singing and traveling.
+
+I am a college student taking up Bachelor of Science in Information Technology in ICCT Cainta Main Campus. I choose to take this course because it is what my brother wants me to take. Also, when I was still young, I already want this course because I tend to like and love anything about computers.
+
+I am a friendly and approachable person, I am easy to get along with so don't hesitate to make friends with me and be comfortable with because I love making new and a lot of friends.</p>
+
+<div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('details')">Details</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('favorite')">Favorite</p>
+                        
+                     </div>
+                     <div class="tab-contents active-tab" id="details">
+                        <ul>
+<li><span>Name:</span><br>John Carlo F. Regaspi</li>                     
+<li><span>Age:</span><br>19</li>
+<li><span>Sex:</span><br>Male</li>
+<li><span>Religion:</span><br>PMCC 4th Watch</li>
+<li><span>Birthday:</span><br>May 23, 2003</li>
+<li><span>Moto</span><br>No Retreat, No Surrender</li>
+                            
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>College:</span><br>ICCT Main Campus.</li>
+                            <li><span>Senior High School:</span><br>RESPSCI</li>
+                            <li><span>Junior High School:</span><br>Manuel I. Santos Memorial National High School</li>
+                            <li><span>Elementary:</span><br>Bagong Pag Asa Elementary School</li>
+                            
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="favorite">
+                        <ul>
+                            <li><span>Color</span><br>Grey,Black, Periwinkle</li>
+                            <li><span>Food</span><br>Any Fruit and Vegetables.</li>
+                            <li><span>Book</span><br>Lucid Dreams</li>
+                            <li><span>Time</span><br>Night</li>
+                            <li><span>Drink</span><br>Water</li>
+                                                                                                                                                                          
+
+                        </ul>
+                    </div>
+              </div>
+         </div>
+    </div>
+</div>
+
+
+</section>
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents")
+   function opentab(tabname){
+       for(tablink of tablinks){
+           tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+           tabcontent.classList.remove("active-tab");    
+       }   
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab"); 
+}
+
+
+</script>
+
+</div>
+</section>
+
+<!-- ------About section end----- -->
+
+<!-- -----Gallery----- -->
+
+
+<section class="Gallery" id="gallery">
+    
+<input type="radio" name="Photos" id="check1" checked>
+<input type="radio" name="Photos" id="check2" checked>
+<input type="radio" name="Photos" id="check3" checked>
+<input type="radio" name="Photos" id="check4" checked>
+<input type="radio" name="Photos" id="check5" checked>
+
+
+
+
+ <div class="container">
+     <h1>Gallery</h1>
+     <div class="top-content">
+         <h3>Photo Gallery:</h3>
+       <label for="check1">All Photos</label>
+         <label for="check2">Me</label>
+         <label for="check3">Family</label>
+         <label for="check4">Friends</label>
+         <label for="check5">Churchmate</label>
+                
+     </div>
+     
+     <div class="photo-gallery">
+         <div class="pic friends">
+             <img src="Images/Fr1.jpeg">
+         </div>
+         <div class="pic family">
+             <img src="Images/F1.jpeg">
+         </div>
+         <div class="pic me">
+             <img src="Images/M1.jpeg">
+         </div>         
+         <div class="pic friends">
+             <img src="Images/Fr2.jpeg">
+         </div>
+          <div class="pic churchmate">
+             <img src="Images/C1.jpeg">
+         </div>       
+         <div class="pic family">
+             <img src="Images/F2.jpeg">
+         </div>
+         <div class="pic me">
+             <img src="Images/M2.jpeg">
+         </div>                 
+         <div class="pic friends">
+             <img src="Images/Fr3.jpeg">
+         </div>
+         <div class="pic churchmate">
+             <img src="Images/C2.jpeg">
+         </div>
+         <div class="pic family">
+             <img src="Images/F3.jpeg">
+         </div>
+         <div class="pic me">
+             <img src="Images/M3.jpeg">
+         </div>
+                
+         <div class="pic friends">
+             <img src="Images/Fr4.jpeg">
+         </div>
+         <div class="pic churchmate">
+             <img src="Images/C3.jpeg">
+         </div>
+         <div class="pic family">
+             <img src="Images/F4.jpeg">
+         </div>
+         <div class="pic me">
+             <img src="Images/M4.jpeg">
+         </div>
+                  
+         <div class="pic friends">
+             <img src="Images/Fr5.jpeg">
+         </div>
+         <div class="pic churchmate">
+             <img src="Images/C4.jpeg">
+         </div>
+         <div class="pic family">
+             <img src="Images/F5.jpeg">
+         </div>
+         <div class="pic me">
+             <img src="Images/M5.jpeg">
+         </div>
+                 
+         <div class="pic friends">
+             <img src="Images/Fr6.jpeg">
+         </div>
+         <div class="pic churchmate">
+             <img src="Images/C5.jpeg">
+         </div>
+         <div class="pic family">
+             <img src="Images/F6.jpeg">
+         </div>
+         <div class="pic me">
+             <img src="Images/M6.jpeg">
+         </div>
+             
+         <div class="pic friends">
+             <img src="Images/Fr7.jpeg">
+         </div>
+         <div class="pic churchmate">
+             <img src="Images/C6.jpeg">
+         </div>
+         <div class="pic family">
+             <img src="Images/F7.jpeg">
+         </div>
+         <div class="pic me">
+             <img src="Images/M7.jpeg">
+         </div>                        
+         <div class="pic friends">
+             <img src="Images/Fr8.jpeg">
+         </div>
+         <div class="pic churchmate">
+             <img src="Images/C7.jpeg">
+         </div>
+         <div class="pic family">
+             <img src="Images/F8.jpeg">
+         </div>
+         <div class="pic me">
+             <img src="Images/M8.jpeg">
+         </div>                      
+         <div class="pic friends">
+             <img src="Images/Fr9.jpeg">
+         </div>
+         <div class="pic churchmate">
+             <img src="Images/C8.jpeg">
+         </div>
+         <div class="pic family">
+             <img src="Images/F9.jpeg">
+         </div>
+         <div class="pic me">
+             <img src="Images/M9.jpeg">
+         </div>                      
+         <div class="pic friends">
+             <img src="Images/Fr10.jpeg">
+         </div>
+         <div class="pic churchmate">
+             <img src="Images/C9.jpeg">
+         </div>
+         <div class="pic family">
+             <img src="Images/F10.jpeg">
+         </div>
+         <div class="pic me">
+             <img src="Images/M10.jpeg">
+         </div>
+           <div class="pic churchmate">
+             <img src="Images/C10.jpeg">
+         </div>
+     </div>
+ </div>
+</section>
+<!-- -----Gallery section ends----- -->
+
+<!-- -----Video----- -->
+
+<div id="hobbies">
+    <div class="container">
+        <div class="heading">Videos</div>
+        <div class="video-container">
+            <div class="video">
+                <video src="Images/Drum.mp4"></video>
+           </div>
+           <div class="video">
+                <video src="Images/earth.mp4"></video>
+           </div>
+           <div class="video">
+                <video src="Images/earth.mp4"></video>
+           </div>
+           <div class="video">
+            <video src="Images/earth.mp4"></video>
+        </div>
+       <div class="video">
+        <video src="Images/earth.mp4"></video>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+var video = document.querySelectorAll('video')
+
+video.forEach(play => play.addEventListener('click', () =>{
+
+play.classList.toggle('active');
+
+if(play.paused){
+play.play();
+}else{
+play.pause();
+play.currenTime = 0;
+}
+
+}));
+
+</script>
+
+<!-- -----Gallery end section------->
+
+<!-- -----My Contact----- -->
+
+
+
+<section id="contact">
+    <h1 class="headings">CONTACT</h1>
+    <form accept="" class="form">
+        <input type="text" name="name" class="input" placeholder="Enter Your Name">
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+        <input type="submit" value="SEND" id="send">
+    </form>
+</section>
+
+<!-- footer -->
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">Scanfcode</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.facebook.com/Regaspijc23"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/jcregaspi23"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/jaysie_23/"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="fa-google" href=""><i class="fa fa-google"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+    
+</body>
+</html>
+    
+    
+    
